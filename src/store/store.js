@@ -1,16 +1,15 @@
-import vue from 'vue';
-import vuex from 'vuex';
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-vue.use(vuex);
+Vue.use(Vuex);
 
-export const store = new vuex.Store({
-    state:{
-        "products": [
-            {'name':"Product 1","price":40},
-            {'name':"Product 2","price":50},
-            {'name':"Product 3","price":60},
-            {'name':"Product 4","price":70},
-          ]
+export const store = new Vuex.Store({
+    state: {
+        products: [
+            {name: 'Banana Skin', price: 20},
+            {name: 'Shiny Star', price: 40},
+            {name: 'Green Shells', price: 60},
+            {name: 'Red Shells', price: 80}
+        ]
     }
-})
-
+});

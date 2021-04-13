@@ -9,13 +9,12 @@
 
 <script>
 export default {
-  name: 'product-list-two',
-  props: ['products'],
-  data () {
-    return {
-      
+    name: 'product-list-two',
+    computed: {
+      products(){
+          return this.$store.state.products;
+      }
     }
-  }
 }
 </script>
 
