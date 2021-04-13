@@ -16,12 +16,7 @@ export default {
   name: 'app',
   data () {
     return {
-      "products": [
-        {'name':"Product 1","price":40},
-        {'name':"Product 2","price":50},
-        {'name':"Product 3","price":60},
-        {'name':"Product 4","price":70},
-      ]
+      
     }
   }
 }
