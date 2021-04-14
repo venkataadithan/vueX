@@ -4,6 +4,7 @@
     <ul>
         <li v-for="product in saleProducts">{{ product.name }}, ${{ product.price }} </li>
     </ul>
+    <button @click="reducePrice">Reduce Price</button>
   </div>
 </template>
 
@@ -16,6 +17,11 @@ export default {
       },
       saleProducts() {
         return this.$store.getters.saleProducts;
+      }
+    },
+    methods: {
+      reducePrice() {
+        this.$store.commit('reducePrice');
       }
     }
 }
